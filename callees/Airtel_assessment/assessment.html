@@ -1,0 +1,318 @@
+
+ <!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="Content-Language" content="hi" />
+<head>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="E_learning_wrapper">
+	<h1 id="headertxt">Q&A</h1>
+	<form>
+		<div id="container1">
+		<h3>What is the age limit to subscribe Pradhan Mantri Jeevan Jyoti Bima Yojana?:</h3>
+		<div class="numberlist">
+
+	<ol type="square" >
+		<li><label for="1">
+    		<input type="radio" value="true" name="ques1" id="1" Autocomplete="Off"> <span>18 to 50 years</span>
+  		</label></li>
+		<li><label for="2">
+    		<input type="radio" value="false" name="ques1"  id="2" Autocomplete="Off"> <span>  20 to 45 years</span>
+  		</label></li>
+		<li> <label for="3">
+    		<input type="radio" value="false"  name="ques1" id="3"  Autocomplete="Off"> <span>  25 to 60 years</span>
+  		</label></li>
+  		<li> <label for="4">
+    		<input type="radio" value="false"  name="ques1" id="4"  Autocomplete="Off"> <span>30 to 70 years</span>
+  		</label></li>
+		
+	</ol>
+</div>
+	<input type="button" class="button" value="submit" id="submit" onclick="function1();">
+</div>
+<div id="container2">
+	<h3>How much is the premium for PMJJBY for one year?</h3>
+			<div class="numberlist">
+
+	<ol type="square" >
+		<li><label for="5">
+    		<input type="radio" value="true" name="ques2" id="5"> <span>Rs. 330</span>
+  		</label></li>
+		<li><label for="6">
+    			<input type="radio" value="true" name="ques2" value="false" id="6" > <span>Rs. 350</span>
+  		</label></li>
+      <li><label for="7">
+        <input type="radio" value="false" name="ques2" id="7"> <span>Rs. 375</span>
+      </label></li>
+      <li><label for="8">
+        <input type="radio" value="false" name="ques2" id="8"> <span>Rs. 400</span>
+      </label></li>
+
+		
+	</ol>
+</div>
+<input type="button" class="button" value="submit" id="submit" onclick="function2();"> 
+</div>
+
+<div id="container3">
+	<h3>What is the risk cover limit of PMJJBY policy?</h3>
+			<div class="numberlist">
+
+	<ol type="square" >
+		<li><label for="9">
+    		<input type="radio" value="true" name="ques3" id="9"> <span>2 Lakhs</span>
+  		</label></li>
+		<li><label for="10">
+    			<input type="radio" value="false" name="ques3"  id="10" > <span>3 Lakhs</span>
+  		</label></li>
+        <li><label for="11">
+        <input type="radio" value="false" name="ques3" id="11"> <span>4 Lakhs</span>
+      </label></li>
+    <li><label for="12">
+          <input type="radio" value="false" name="ques3"  id="12" > <span>5 Lakhs</span>
+      </label></li>
+		
+	</ol>
+</div>
+<input type="button" class="button" value="submit" id="submit" onclick="function3();"> 
+</div>
+<div id="container4">
+  <h3>Which of the following can avail the benefits of Pradhan Mantri Jeevan Jyoti Bima Yojana?</h3>
+      <div class="numberlist">
+
+  <ol type="square" >
+    <li><label for="13">
+        <input type="radio" value="true" name="ques4" id="13"> <span><span>Airtel Payments Bank savings account holder</span></span>
+      </label></li>
+    <li><label for="14">
+          <input type="radio" value="false" name="ques4"  id="14" > <span>Airtel broadband customer</span>
+      </label></li>
+        <li><label for="15">
+        <input type="radio" value="false" name="ques4" id="15"> <span>Airtel postpaid customer</span>
+      </label></li>
+    <li><label for="16">
+          <input type="radio" value="false" name="ques4"  id="16" > <span>None of the above</span>
+      </label></li>
+    
+  </ol>
+</div>
+<input type="button" class="button" value="submit" id="submit" onclick="function4();"> 
+</div>
+<div id="container5">
+  <h3>What is the cover period limit in PMJJBY policy?</h3>
+      <div class="numberlist">
+
+  <ol type="square" >
+    <li><label for="17">
+        <input type="radio" value="true" name="ques5" id="17"> <span>1 year</span>
+      </label></li>
+    <li><label for="18">
+          <input type="radio" value="false" name="ques5"  id="18" > <span>1.5 year</span>
+      </label></li>
+        <li><label for="19">
+        <input type="radio" value="false" name="ques5" id="19"> <span>2 years</span>
+      </label></li>
+    <li><label for="20">
+          <input type="radio" value="false" name="ques5"  id="20" > <span>3 years</span>
+      </label></li>
+    
+  </ol>
+</div>
+<input type="button" class="button" value="submit" id="submit" onclick="function5();"> 
+</div>
+
+<div id="success_msg">
+	<h5>Your score is:<p></p>
+	<span id="score"></span>
+	</h5>
+	
+	<input type="button" class="button"  style="background-color: #f20f13" id="retry" value="Retry"> 
+		<input type="button" class="button" id="continue" value="Continue"> 
+
+</div>
+
+
+
+</form>
+<div id="snackbar">Please select option to continue</div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	function function1(){
+  		var val1= $('input[name=ques1]:checked').val();	
+  		 var usr_alt = document.getElementById("snackbar");
+  		var radio_buttons = $("input[name='ques1']");
+		if( radio_buttons.filter(':checked').length == 0){
+		 usr_alt.className = "show";
+    setTimeout(function(){ usr_alt.className = usr_alt.className.replace("show", ""); }, 3000);
+			return false;
+		}
+  		
+  		else
+  		{
+  		if(val1=='true')
+  		{
+  			x =20;
+  		}
+  		else
+  		{
+  			x= 0;
+  		}
+ 		$('#container1').hide();
+		$('#container2').show();
+  	    return x; 
+  		}
+ 	}
+	function function2() {
+		 var z;
+   		 var y = function1();
+   		 var val2= $('input[name=ques2]:checked').val(); 
+   		 		 var usr_alt = document.getElementById("snackbar");
+   		 	var radio_buttons2 = $("input[name='ques2']");
+		if( radio_buttons2.filter(':checked').length == 0){
+					 usr_alt.className = "show";
+   		 setTimeout(function(){ usr_alt.className = usr_alt.className.replace("show", ""); }, 3000);
+			return false;
+		}
+		else
+		{
+     	if(val2=='true')
+  		{
+  			x = 20;
+  		}
+  		else
+  		{
+  			x= 0;
+  		}
+  		$('#container1').hide();
+		$('#container2').hide();
+		$('#container3').show();
+  		return  z= x+y;
+  		}
+	}
+	function function3() {
+	
+   		 var z = function2();
+   		 var i;
+   		 var usr_alt = document.getElementById("snackbar");
+   		 var val3= $('input[name=ques3]:checked').val(); 
+   		 	var radio_buttons3 = $("input[name='ques3']");
+		if( radio_buttons3.filter(':checked').length == 0){
+			 usr_alt.className = "show";
+   		 setTimeout(function(){ usr_alt.className = usr_alt.className.replace("show", ""); }, 3000);
+			return false;
+		}
+		else
+		{
+     	if(val3=='true')
+  		{
+  			x = 20;
+  		}
+  		else
+  		{
+  			x= 0;
+  		}
+  	
+  		$('#container1').hide();
+		$('#container2').hide();
+		$('#container3').hide();
+      $('#container4').show();
+      return  i= x+z;
+  //   $('#headertxt').hide();
+		// $('#success_msg').show();
+
+  // 		$('#score').html(i);
+  		}
+	}
+
+    function function4() {
+  
+       var z = function3();
+       var i;
+       var usr_alt = document.getElementById("snackbar");
+       var val3= $('input[name=ques4]:checked').val(); 
+        var radio_buttons3 = $("input[name='ques4']");
+    if( radio_buttons3.filter(':checked').length == 0){
+       usr_alt.className = "show";
+       setTimeout(function(){ usr_alt.className = usr_alt.className.replace("show", ""); }, 3000);
+      return false;
+    }
+    else
+    {
+      if(val3=='true')
+      {
+        x = 20;
+      }
+      else
+      {
+        x= 0;
+      }
+     
+      $('#container1').hide();
+    $('#container2').hide();
+    $('#container3').hide();
+      $('#container4').hide();
+        $('#container5').show();
+        return  i= x+z;
+  //   $('#headertxt').hide();
+    // $('#success_msg').show();
+
+  //    $('#score').html(i);
+      }
+  }
+   function function5() {
+  
+       var z = function4();
+       var i;
+       var usr_alt = document.getElementById("snackbar");
+       var val3= $('input[name=ques5]:checked').val(); 
+        var radio_buttons3 = $("input[name='ques5']");
+    if( radio_buttons3.filter(':checked').length == 0){
+       usr_alt.className = "show";
+       setTimeout(function(){ usr_alt.className = usr_alt.className.replace("show", ""); }, 3000);
+      return false;
+    }
+    else
+    {
+      if(val3=='true')
+      {
+        x = 20;
+      }
+      else
+      {
+        x= 0;
+      }
+     
+      $('#container1').hide();
+    $('#container2').hide();
+    $('#container3').hide();
+      $('#container4').hide();
+        $('#container5').hide();
+        i= x+z;
+    $('#headertxt').hide();
+    $('#success_msg').show();
+
+     $('#score').html(i);
+      }
+    }
+
+	$('#retry').click(function() {
+    $('input[name="ques1"]').attr('checked', false);
+     $('input[name="ques2"]').attr('checked', false);
+      $('input[name="ques3"]').attr('checked', false);
+       $('input[name="ques4"]').attr('checked', false);
+        $('input[name="ques5"]').attr('checked', false);
+
+    location.reload();
+});
+    $('#continue').click(function() {
+      
+    location.href = "module_2.html"
+});
+
+</script>
+</html>
